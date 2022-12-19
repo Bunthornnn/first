@@ -11,11 +11,11 @@
     var_dump($text);//data type after convert
 
 //2 settype
-    $a = $_POST['num'];
+    $ab = $_POST['num'];
     echo "<br>";
-    var_dump($a);
-    settype($a,"integer");
-    var_dump($a);
+    var_dump($ab);
+    settype($ab,"integer");
+    var_dump($ab);
 
 //3
     $b = 2022; //
