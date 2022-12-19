@@ -8,7 +8,7 @@
 </head>
 <body>
 <table>
-        <form method="POST">
+        <form>
             <tr>
                 <td><label>Username</label></td>
                 <td></td>
@@ -30,10 +30,10 @@
         </form>
     </table>
     <?php 
-    if(isset($_POST["user"])){
-        $username = $_POST["user"];
-        $password = $_POST["passwd"];
-        echo $username . " and " . $password  ;
+    if(isset( $_POST['user'])){
+        $user = $_POST['user'];
+        $passwd = $_POST['passwd'];
+        echo $user . " and " . $passwd  ;
     }
     ?>
 </body>

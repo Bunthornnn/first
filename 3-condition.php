@@ -8,4 +8,3 @@ if($c){
         //run condition false 
         echo "<p style='color:red;'>incorrect</p>";
     };
-?>

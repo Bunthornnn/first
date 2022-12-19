@@ -20,7 +20,7 @@
         $title = $_POST['title'];
         $content = $_POST['content'];
         echo "<h1>".$title."</h1>";
-        echo $content;
+        echo "<br>".$content."</br>";
     }
     ?>
 </body>
