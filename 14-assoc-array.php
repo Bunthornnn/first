@@ -15,7 +15,7 @@
 </html>
 <?php
 $students  = array('name' => 'Dara', 'sex' => 'Male', 'phone' => '012345678', 'address' => 'Siem Reap',);
-foreach ($students as $key => $student) {
+foreach ($students as $key => $student){
     echo $key . ": ", $student, "<br>";
 }
 ?>

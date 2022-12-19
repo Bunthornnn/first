@@ -22,6 +22,7 @@
             echo "Login Successfully";
                 if ($remember == 'admin') {
                     setcookie('admin','1234',time()+(86400*30));
+                    
                 }
             }
         }
