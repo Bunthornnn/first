@@ -13,6 +13,16 @@
         <div><input type="checkbox" name="rem" value="remem">remember password</div>
         <div><input type="submit" value="Login"></div>
     </form>
+    <script>
+        $(document).ready(function(){
+            $('#username').keyup(function(){
+                var username = $(this).val();
+                    if (username=='admin'){
+                        $('#password').val(<?php echo $_COOKIE['admin'];?>);
+                    }
+            })
+        }
+    </script>
     <?php
         if(isset($_POST['uname'])){
             $username = $_POST['uname'];
@@ -24,6 +34,8 @@
                     setcookie('admin','1234',time()+(86400*30));
                     
                 }
+            }else{
+                echo "Login Failed";
             }
         }
     ?>
